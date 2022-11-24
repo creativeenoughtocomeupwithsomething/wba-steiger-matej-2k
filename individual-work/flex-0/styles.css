@@ -1,0 +1,17 @@
+.flexbox-container {    
+    display: flex;
+    height: 500px;
+    justify-content: center;
+}
+.flexbox-item {
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+    background-color:fuchsia;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    
+
+}
+

@@ -1,0 +1,245 @@
+/*-------------------------header-------------------------*/
+.header {
+  background-color: #CBC1B1;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.hero{
+    margin-left: 5%
+}
+.navbar {
+  display: flex;
+  height: 55px;
+  top: 48px;
+  position: relative;
+  margin-right: 5%;
+}
+.button {
+  height: 55px;
+  border: 0px;
+  background-color: #CBC1B1;
+  font-weight: 700;
+  font-size: 18px;
+}
+.button:hover{
+    background-color: #7C7474;
+}
+.menu{
+    display: none;
+}
+/* ------------------------index.html---------------------*/
+img{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+.image{
+    width: 100vw;
+    height: 100vh;
+}
+.landing-textbox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    justify-content:center;
+    background-color: #7c747463;
+    height: 35%;
+    width: 40%;
+    color: #F8F7EC;
+}
+h3{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    font-weight: lighter;
+}
+h1{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+}
+.CTA{
+    width: 30%;
+    height: 50px;
+    border: 0px ;
+    background-color: #7C7474;
+    position: relative;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 2.5%;
+}
+.CTA:hover{
+    background-color: #554f4f;
+}
+.market{
+    display: flex;
+    padding: 10%;
+
+}
+.offer{
+    flex-wrap: wrap;
+}
+h2{
+    padding: 5%;
+}
+/*---------------------about.html--------------------------*/
+.body{
+    display: grid;
+    top: 25vh;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    left: 50px;
+    height: auto;
+}
+.element{
+    width: 20vw;
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+p{
+    font-size: 25px;
+}
+/*------------------contacts.html-------------------------*/
+.message{
+    margin: 10vw;
+    margin-bottom: 10px;
+    margin-top: 10vh;
+    position: relative;
+    top: 200px;
+    display: grid;
+    width: 75vw;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+.info{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #aaaaaa;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.text{
+    grid-column: 1/ span 2;
+    background-color: #aaaaaa;
+    width: 100%;
+    height: 200px;
+}
+.button2 {
+    position: relative;
+    top: 230px;
+    left: 45%;
+    height: 55px;
+    border: 0px;
+    background-color: #CBC1B1;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .button2:hover{
+    background-color: #554f4f;
+  }
+  /*-------------------footer---------------------------*/
+.footer {
+    background-color: #CBC1B1;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    justify-content: center;
+  }
+  .footer-text{
+    font-size:small !important;
+}
+
+/*--------------------phone----------------------------*/
+  @media screen and (max-width: 800px) 
+  {
+    /*-----------------header-------------------------*/
+    .header{
+        height: 100px;
+    }
+    .navbar{
+        display: none;
+    }
+    .menu{
+        display: grid;
+        margin: 25px;
+    }
+    .menu-bar{
+        margin: 2px;
+        height: 10px;
+        background-color: #554f4f;
+        width: 45px;
+    }
+    img{
+        width: 15vw;
+        height: 15vw;
+    }
+    /*-------------------index.html-------------------*/
+    .image{
+        display: none;
+    }
+    .second{
+        position: relative;
+        top: 10vh;
+    }
+    .offer{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .market{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    h2{
+        margin: 0px;
+    }
+    p{
+        margin: 0px;
+    }
+    .descr{
+        padding: 2vw;
+    }
+    .CTA{
+        top: -13vh;
+    }
+    /*-----------------about.html--------------------*/
+    .body{
+        grid-template-columns: auto;
+        left: 15vw;
+        top: 18vh;
+    }
+    .element{
+        width: 75vw;
+    }
+    /*----------------contacts.html------------------- */
+    .message{
+        grid-template-columns: auto;
+        grid-auto-rows: 200px;
+        top: 10vh;
+    }
+    .text{
+        grid-column: 1;
+    }
+  .button2{
+        top: 15vh;
+        left: 38vw;
+  }
+  .footer-text{
+    font-size:small !important;
+}
+}
